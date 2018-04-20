@@ -1,0 +1,66 @@
+.heading {
+    width: 550px;
+    height: 40px;
+    background-color: #FB1;
+    color: #DEDEDE;
+    text-shadow: 1px 1px 2px #101101;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin: 3px 0px;
+    cursor: pointer;
+}
+
+.content {
+    display: none; /* Set the div forms to hide initially*/
+    width: 530px;
+    height: 150;
+    background-color: lightgray;
+    font-family: sans-serif;
+    padding: 5px;
+    border: 3px solid lightgray;
+}
+
+.element_container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.next, [type="submit"] {
+    width: 100px;
+    height: 20px;
+    color: #DEDEDE;
+    background-color: #73A;
+    border-radius: 5px;
+    border: 1px solid #73A;
+    margin: 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-left: 430px;
+}
+
+.next:hover, [type="submit"]:hover {
+    background-color: #5EABED;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin: 2px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    box-shadow: 1px 1px 3px black;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 2px;
+    border: none;
+}
