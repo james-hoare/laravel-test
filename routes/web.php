@@ -11,18 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-// Added routes for client and form post
-Route::get('/client', function() {
-    return view('client');
-});
-Route::resource('clients', 'ClientController');
-Route::post('storeUserDetails', "ClientController@store");
+// Added routes for /client and form post
+Route::get('/', 'ClientController@index');
+Route::resource('/client', 'ClientController');

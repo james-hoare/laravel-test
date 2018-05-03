@@ -25,8 +25,8 @@ function headingClicked(heading) {
     var d3_details = document.getElementById("details_three");
     var fname = document.getElementById("firstName");
     var lname = document.getElementById("lastName");
-    var email = document.getElementById("emailAdd");
-    var mobile = document.getElementById("mobileNo");
+    var email = document.getElementById("email");
+    var mobile = document.getElementById("mobile");
     var gender = document.getElementById("gender");
     var dob = document.getElementById("dob");
     
@@ -63,7 +63,7 @@ function headingClicked(heading) {
             }
         }
     } else {
-        //something has with heading value, write to log
+        //something wrong with heading value, write to log
     }
 }
 
@@ -131,9 +131,9 @@ function validateMobile(element) {
 // function to check mobile is in correct format
 function validateDate(element) {
     // basic regex for the date format, following:
-    // DD/MM/YYYY formatting
+    // YYYY/MM/DD formatting in the  backend. UI will show DD/MM/YYYY format.
     // note: I didn't cover leap years here
-    var date_regex = new RegExp("^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$");
+    var date_regex = new RegExp("^(19|20)\\d\\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$");
 
     // check if text field is blank and
     // validate text field against the regex

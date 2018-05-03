@@ -1,26 +1,52 @@
+body {
+    background-color: #d2e1ff;
+}
+
+#form-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #888;
+}
+
 .heading {
     width: 550px;
-    height: 40px;
+    height: 50px;
     background-color: #FB1;
-    color: #DEDEDE;
-    text-shadow: 1px 1px 2px #101101;
+    color: whitesmoke;
     font-family: sans-serif;
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 7px;
-    box-sizing: border-box;
-    margin: 3px 0px;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 2px #777;
+    padding: 15px 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    border-bottom: 0px;
     cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: inset -1px -10px 12px #eea30e
 }
 
 .content {
     display: none; /* Set the div forms to hide initially*/
     width: 530px;
-    height: 150;
-    background-color: lightgray;
+    background-color: #DEDEDE;
     font-family: sans-serif;
+    margin: 0 auto;
     padding: 5px;
-    border: 3px solid lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: content-box;
+}
+
+#details_one {
+    display: block; /* Set to show open form on load */
 }
 
 .element_container {
@@ -32,18 +58,20 @@
 
 .next, [type="submit"] {
     width: 100px;
-    height: 20px;
-    color: #DEDEDE;
-    background-color: #73A;
-    border-radius: 5px;
-    border: 1px solid #73A;
+    height: 23px;
+    color: whitesmoke;
+    background-color: #7362ce;
+    border-radius: 7px;
+    border: 1px solid #7362ce;
     margin: 3px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: center;
     align-items: center;
-    margin-left: 430px;
+    margin-left: 425px;
+    font-size: 0.75rem;
+    box-shadow: inset 0px 3px 30px #434cb2;
 }
 
 .next:hover, [type="submit"]:hover {
@@ -53,14 +81,21 @@
 
 label {
     display: block;
-    font-weight: 500;
     margin: 2px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], select {
-    box-shadow: 1px 1px 3px black;
-    border-radius: 4px;
-    padding: 5px;
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select {
+    height: 20px;
     margin: 2px;
+    padding: 5px;
     border: none;
+    border-radius: 8px;
+    box-shadow: inset 1px 1px 7px #888;
+}
+
+select {
+    height: 30px;
 }
